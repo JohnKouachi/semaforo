@@ -5,18 +5,31 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #bfddf3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="147.0" layoutY="177.0" text="Aguardar oponente ...">
          <font>
             <Font size="32.0" />
          </font>
       </Label>
-      <Button layoutX="243.0" layoutY="291.0" mnemonicParsing="false" text="Cancelar">
+      <Button layoutX="243.0" layoutY="266.0" mnemonicParsing="false" text="Cancelar">
          <font>
             <Font size="22.0" />
          </font>
       </Button>
+      <MenuBar prefHeight="32.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Opções">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Sair">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
    </children>
 </Pane>
