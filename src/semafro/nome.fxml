@@ -5,28 +5,14 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #bfddf3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="201.0" layoutY="168.0" prefHeight="30.0" prefWidth="167.0" text="Insere o teu nome:">
+      <Label layoutX="224.0" layoutY="168.0" prefHeight="30.0" prefWidth="167.0" text="Insere o teu nome:">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <TextField layoutX="201.0" layoutY="208.0" prefHeight="25.0" prefWidth="167.0" />
-      <Button layoutX="245.0" layoutY="262.0" mnemonicParsing="false" text="Pronto" />
-      <MenuBar prefHeight="32.0" prefWidth="600.0">
-        <menus>
-          <Menu mnemonicParsing="false" text="Opções">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Sair">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
+      <TextField layoutX="224.0" layoutY="208.0" prefHeight="25.0" prefWidth="167.0" />
    </children>
 </Pane>
