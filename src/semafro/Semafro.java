@@ -19,6 +19,8 @@ import javafx.stage.Stage;
  */
 public class Semafro extends Application {
     
+    
+    //teste
     @Override
     public void start(Stage primaryStage) {
         Button btn = new Button();
