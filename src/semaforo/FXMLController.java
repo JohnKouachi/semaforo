@@ -25,17 +25,17 @@ public class FXMLController {
     @FXML
     private Button btn6;
     @FXML
+    private Button btn7;
+    @FXML
+    private Button btn8;
+    @FXML
+    private Button btn9;
+    @FXML
     private Button btn10;
     @FXML
     private Button btn11;
     @FXML
     private Button btn12;
-    @FXML
-    private Button btn121;
-    @FXML
-    private Button btn122;
-    @FXML
-    private Button btn123;
     @FXML
     private MenuItem menuItemExit;
 
@@ -52,9 +52,6 @@ public class FXMLController {
         } else if (clickedButton.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;")) {
             // Change yellow button to red
             clickedButton.setStyle("-fx-background-color: red; -fx-border-color: black;");
-        } else if (clickedButton.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) {
-            // Change red button back to white
-            clickedButton.setStyle("-fx-background-color: white; -fx-border-color: black;");
         }
         
         checkGameEnd(); // Check if the game has ended after each button click
@@ -62,24 +59,127 @@ public class FXMLController {
     
     private void checkGameEnd() {
         // Check for winning condition (line, column, or diagonal of only red buttons)
-        if ((btn1.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+        if (// for red side
+            // Lines
+            (btn1.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
             btn2.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
-            btn3.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) ||
-            (btn4.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
-            btn5.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
-            btn6.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) ||
-            (btn10.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn3.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn4.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) ||
+            (btn5.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn6.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn7.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn8.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) ||
+            (btn9.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn10.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
             btn11.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
             btn12.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) ||
-            (btn121.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
-            btn122.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
-            btn123.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) ||
+            //Colunms
             (btn1.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
             btn5.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
-            btn123.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) ||
+            btn9.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) ||
+            (btn2.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn6.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn10.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) ||
             (btn3.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
-            btn5.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
-            btn121.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")))
+            btn7.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn11.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) ||
+            (btn4.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn8.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn12.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) ||
+            //Diagonals
+            (btn1.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn6.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn11.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) ||
+            (btn2.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn7.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn12.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) ||
+            (btn3.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn6.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn9.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) ||
+            (btn4.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn7.getStyle().equals("-fx-background-color: red; -fx-border-color: black;") &&
+            btn10.getStyle().equals("-fx-background-color: red; -fx-border-color: black;")) ||
+            //Yellow side
+            // Lines
+            (btn1.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn2.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn3.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn4.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;")) ||
+            (btn5.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn6.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn7.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn8.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;")) ||
+            (btn9.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn10.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn11.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn12.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;")) ||
+            //Colunms
+            (btn1.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn5.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn9.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;")) ||
+            (btn2.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn6.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn10.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;")) ||
+            (btn3.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn7.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn11.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;")) ||
+            (btn4.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn8.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn12.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;")) ||
+            //Diagonals
+            (btn1.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn6.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn11.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;")) ||
+            (btn2.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn7.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn12.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;")) ||
+            (btn3.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn6.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn9.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;")) ||
+            (btn4.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn7.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;") &&
+            btn10.getStyle().equals("-fx-background-color: yellow; -fx-border-color: black;")) ||
+            //Green side
+            // Lines
+            (btn1.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn2.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn3.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn4.getStyle().equals("-fx-background-color: green; -fx-border-color: black;")) ||
+            (btn5.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn6.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn7.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn8.getStyle().equals("-fx-background-color: green; -fx-border-color: black;")) ||
+            (btn9.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn10.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn11.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn12.getStyle().equals("-fx-background-color: green; -fx-border-color: black;")) ||
+            //Colunms
+            (btn1.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn5.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn9.getStyle().equals("-fx-background-color: green; -fx-border-color: black;")) ||
+            (btn2.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn6.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn10.getStyle().equals("-fx-background-color: green; -fx-border-color: black;")) ||
+            (btn3.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn7.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn11.getStyle().equals("-fx-background-color: green; -fx-border-color: black;")) ||
+            (btn4.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn8.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn12.getStyle().equals("-fx-background-color: green; -fx-border-color: black;")) ||
+            //Diagonals
+            (btn1.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn6.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn11.getStyle().equals("-fx-background-color: green; -fx-border-color: black;")) ||
+            (btn2.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn7.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn12.getStyle().equals("-fx-background-color: green; -fx-border-color: black;")) ||
+            (btn3.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn6.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn9.getStyle().equals("-fx-background-color: green; -fx-border-color: black;")) ||
+            (btn4.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn7.getStyle().equals("-fx-background-color: green; -fx-border-color: black;") &&
+            btn10.getStyle().equals("-fx-background-color: green; -fx-border-color: black;"))
+            )
         {
             openEndScene(); // Game has ended, open the end.fxml scene
         }
@@ -88,7 +188,7 @@ public class FXMLController {
     private void openEndScene() {
         try {
             Stage primaryStage = (Stage) btn1.getScene().getWindow();
-            Parent endRoot = FXMLLoader.load(getClass().getResource("end.fxml"));
+            Parent endRoot = FXMLLoader.load(getClass().getResource("End.fxml"));
             Scene endScene = new Scene(endRoot);
             primaryStage.setScene(endScene);
         } catch (IOException e) {

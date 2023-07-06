@@ -14,9 +14,9 @@
             <menus>
                 <Menu mnemonicParsing="false" text="File">
                     <items>
-                        <MenuItem fx:id="" mnemonicParsing="false" text="Voltar ao inicio"  />                        
+                        <MenuItem fx:id="" mnemonicParsing="false" text="Voltar ao inicio" />                        
                         <MenuItem mnemonicParsing="false" text="Desistir" />
-                        <MenuItem fx:id="menuItemExit" mnemonicParsing="false" text="Sair" onAction="#handleExitAction"/>
+                        <MenuItem fx:id="menuItemExit" mnemonicParsing="false" onAction="#handleExitAction" text="Sair" />
                     </items>
                 </Menu>
             </menus>
@@ -26,15 +26,15 @@
                 <Button fx:id="btn1" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="0" GridPane.rowIndex="0" />
                 <Button fx:id="btn2" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="0" />
                 <Button fx:id="btn3" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="0" />                
-                <Button fx:id="btn4" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-                <Button fx:id="btn5" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                <Button fx:id="btn6" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="1" />                
-                <Button fx:id="btn10" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="0" GridPane.rowIndex="2" />
-                <Button fx:id="btn11" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button fx:id="btn5" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <Button fx:id="btn6" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button fx:id="btn7" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="1" />                
+                <Button fx:id="btn9" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <Button fx:id="btn10" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                 <Button fx:id="btn12" graphicTextGap="0.0" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                <Button fx:id="btn121" graphicTextGap="0.0" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                <Button fx:id="btn122" graphicTextGap="0.0" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                <Button fx:id="btn123" graphicTextGap="0.0" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="3" />
+                <Button fx:id="btn11" graphicTextGap="0.0" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Button fx:id="btn8" graphicTextGap="0.0" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Button fx:id="btn4" graphicTextGap="0.0" onAction="#handleButtonClick" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" GridPane.columnIndex="3" />
             </children>
          <columnConstraints>
             <ColumnConstraints />
