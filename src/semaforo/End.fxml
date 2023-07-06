@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="semaforo.EndController">
+   <children>
+      <Button fx:id="btnSair" layoutX="344.0" layoutY="267.0" mnemonicParsing="false" onAction="#handleSairButton" prefHeight="67.0" prefWidth="152.0" text="Sair">
+         <font>
+            <Font name="Bodoni MT Black" size="32.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnJogar" layoutX="314.0" layoutY="160.0" mnemonicParsing="false" onAction="#handleJogarButton" prefHeight="67.0" prefWidth="213.0" text="Voltar ao inicio">
+         <font>
+            <Font name="Bodoni MT Black" size="21.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="224.0" fitWidth="225.0" layoutX="24.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/8029960_kkLKN.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="181.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jogo do semáforo" textAlignment="CENTER">
+         <font>
+            <Font name="Garamond" size="47.0" />
+         </font>
+      </Text>
+      <Text layoutX="181.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ganhou:" textAlignment="CENTER" wrappingWidth="128.57568359375">
+         <font>
+            <Font name="Garamond" size="31.0" />
+         </font>
+      </Text>
+      <Text layoutX="321.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0"   fx:id="txtWinner" text="jogador" textAlignment="CENTER" wrappingWidth="198.57568359375">
+         <font>
+            <Font name="Garamond" size="31.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

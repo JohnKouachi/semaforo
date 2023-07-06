@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="semaforo.MenuController">
+   <children>
+      <Text layoutX="259.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jogo do semáforo" textAlignment="CENTER">
+         <font>
+            <Font name="Garamond" size="47.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="224.0" fitWidth="225.0" layoutX="14.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/8029960_kkLKN.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnJogar" layoutX="334.0" layoutY="149.0" mnemonicParsing="false" onAction="#handleJogarButton" prefHeight="67.0" prefWidth="152.0" text="Jogar">
+         <font>
+            <Font name="Bodoni MT Black" size="32.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSair" layoutX="334.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleSairButton" prefHeight="67.0" prefWidth="152.0" text="Sair">
+         <font>
+            <Font name="Bodoni MT Black" size="32.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
